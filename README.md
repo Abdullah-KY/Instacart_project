@@ -83,10 +83,13 @@ ORDER BY
     reorder_rate DESC
 LIMIT 10;
 ```
+### Output Result Set
+![Result Set](Assets/q1_result_set.png)
 ### Visualization
 ![Highest Reorder Rate Products](Assets/q1_graph.png)
 
 ---
+
 
 ## Query 2: Product Distribution by Aisle
 ### Purpose
@@ -109,6 +112,9 @@ ORDER BY
     prod_count DESC
 LIMIT 10;
 ```
+### Output Result Set
+![Result Set](Assets/q2_result_set.png)
+
 ---
 
 ## Query 3: Peak Ordering Hours
@@ -128,9 +134,9 @@ GROUP BY
 ORDER BY
     order_count DESC;
 ```
+### Output Result Set
+![Result Set](Assets/q3_result_set.png)
 ### Visualization
-
----
 ![Peak Ordering Hours](Assets/q3_graph.png)
 
 ---
@@ -155,7 +161,8 @@ ORDER BY
     total_orders DESC
 LIMIT 10;
 ```
----
+### Output Result Set
+![Result Set](Assets/q4_result_set.png)
 
 ### Visualization
 
@@ -207,6 +214,8 @@ LEFT JOIN products p ON tp.product_id = p.product_id
 ORDER BY rs.reorder_rate_raw DESC, tp.prod_count DESC
 LIMIT 100;
 ```
+### Output Result Set
+![Result Set](Assets/q5_result_set.png)
 ---
 
 ## Query 6: Final Customer Analysis
@@ -274,7 +283,8 @@ ORDER BY
     ro.order_count DESC
 LIMIT 25;
 ```
-
+### Output Result Set
+![Result Set](Assets/q6_result_set.png)
 ---
 
 ## 📌 Key Insights
